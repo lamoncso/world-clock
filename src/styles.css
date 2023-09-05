@@ -20,6 +20,7 @@ select {
 h1 {
     font-family:sans-serif;
     font-size: 36px;
+    text-align: center;
 }
 
 h2 {

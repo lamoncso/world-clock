@@ -51,12 +51,14 @@ function updateCity(event){
     let cityElementTime = cityElement.format("h:mm:ss [<small>]A[</small]");
     let cities=document.querySelector("#cities");
     cities.innerHTML = `
-      <div class="city">
-        <div>
+      <div class="city row">
+        <div class="col-sm">
         <h2>${cityName}</h2>
         <div class="date">${cityElementDate}</div>
         </div>
+        <div class="col-sm text-end">
         <div class="time">${cityElementTime}</div>
+        </div>
     </div>`;
 }
 

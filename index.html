@@ -6,12 +6,14 @@
 <link rel="stylesheet" href="src/styles.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
     <title>World clock</title>
 </head>
 <body>
 <div class="container">
-    <h1>World Clock</h1>
+    <h1>☀️🕛 World Clock 🕛☀️</h1>
     <select name="city" id="city">
         <option value="">Select a city</option>
         <option value="current">My current location</option>
@@ -21,26 +23,32 @@
         <option value="Pacific/Honolulu">Honolulu 🎼</option>
     </select>
     <div id="cities">
-    <div class="city" id="sydney">
-        <div>
+    <div class="city row" id="sydney">
+    <div class="col-sm">
         <h2>Sydney 😎</h2>
         <div class="date"></div>
-        </div>
+    </div>
+    <div class="col-sm text-end">
         <div class="time"></div>
     </div>
-     <div class="city" id="budapest">
-        <div>
+    </div>
+     <div class="city row" id="budapest">
+        <div class="col-sm">
         <h2>Budapest🍷</h2>
         <div class="date"></div>
         </div>
+        <div class="col-sm text-end">
         <div class="time"></div>
     </div>
-    <div class="city" id="tokyo">
-        <div>
+    </div>
+    <div class="city row" id="tokyo">
+        <div class="col-sm">
         <h2>Tokyo👩‍💻</h2>
         <div class="date"></div>
         </div>
+        <div class="col-sm text-end">
         <div class="time"></div>
+    </div>
     </div>
 </div>
 </div>

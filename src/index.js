@@ -59,7 +59,8 @@ function updateCity(event){
         <div class="col-sm text-end">
         <div class="time">${cityElementTime}</div>
         </div>
-    </div>`;
+    </div>
+    `;
 }
 
 let citySelect = document.querySelector("#city");

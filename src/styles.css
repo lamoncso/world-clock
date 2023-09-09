@@ -25,6 +25,16 @@ h1 {
     text-align: center;
 }
 
+h1 a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+h1 a:hover {
+    color:#b7e0f2;
+}
+
 h2 {
     font-family: 'Calligraffitti', cursive;
     font-size: 28px;
@@ -77,6 +87,7 @@ footer {
     max-width: 600px;
     text-align: center;
     margin:0 auto;
+    margin-bottom: 60px;
 }
 
 @media (max-width:573px){

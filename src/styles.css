@@ -8,7 +8,9 @@ body {
 }
 
 select {
-    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    background-repeat: none;
+    background-size: contain;
     border-radius: 4px;
     display: block;
     font-family: 'Calligraffitti', cursive;
@@ -78,14 +80,22 @@ footer {
 }
 
 @media (max-width:573px){
+    h1 {
+        font-size: 30px;
+    }
     .city, .time {
         text-align: center;
+        display: block;
+    }
+
+    .date {
+        margin-bottom: 17px;
     }
 }
 
 @media (max-width:480px) {
-    h1 {
-        font-size: 34px;
+    body {
+        min-width: 410px;
     }
 
     h2 {
